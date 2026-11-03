@@ -9,9 +9,9 @@ function Homepage() {
         className="header-img absolute inset-0 w-full h-full object-cover object-[40%] z-0"
       />
 
-      <div className="gradiant-body absolute inset-0 z-10 bg-linear-to-t from-gray-950 via-gray-100/10 to-transparent"></div>
+      <div className="gradiant-body absolute inset-0 z-10 bg-linear-to-t from-gray-950 via-gray-950/10 to-transparent"></div>
 
-      <div className="header-title absolute flex flex-col bottom-30 left-5 z-20 w-65">
+      <div className="header-title absolute flex flex-col bottom-35 left-5 z-20 w-65">
         <span className="text-gray-100 text-[35px]">
           Super campeão do Brasil 2025
         </span>
