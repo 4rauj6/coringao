@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 
 function App() {
-  const basename = import.meta.env.DEV ? "" : "/repo_name";
+  const basename = import.meta.env.DEV ? "" : "/coringao";
 
   return (
     <BrowserRouter basename={basename}>

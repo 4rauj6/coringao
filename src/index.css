@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.header-button {
+  margin-top: 280px;
+  margin-left: 40px;
+}
+
+body {
+  @apply bg-gray-950;
+}
