@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 .header-button {
   margin-top: 280px;
@@ -6,5 +7,5 @@
 }
 
 body {
-  @apply bg-gray-950;
+  @apply bg-black;
 }
