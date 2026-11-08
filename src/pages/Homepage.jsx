@@ -87,7 +87,7 @@ function Homepage() {
             Com força, foco e FÉ!
           </span>
 
-          <div className="link mt-4">
+          <div className="link mt-4 ml-22">
             <Link
               to="/"
               className="bg-gray-100 text-gray-900 px-3 py-2 w-40 flex items-center gap-2 rounded transition-all duration-300 text-md cursor-pointer hover:bg-gray-800 hover:text-gray-100"
@@ -112,14 +112,24 @@ function Homepage() {
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-      </div>
-      <div className="flex justify-center w-full text-white">
-        <h1 className="w-70 text-base">
-          "O Corinthians é o time do povo e é o povo quem vai fazer o time." -
-          Miguel Battaglia()
-        </h1>
+      <div className="relative h-full overflow-hidden mt-100">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.gazetaesportiva.com%2Fuploads%2Fimagem%2F2016%2F12%2F04%2F1982divIMG208995_V1HD001D30_GJQNNNPOVM_4-1024x682.jpg&f=1&nofb=1&ipt=dac63e8e2c410953fa605502b4d7c2b605b70db6c0847996c392d7813559872b&ipo=images"
+          alt=""
+          className="h-180 object-cover object-[75%]"
+        />
+        <div className=" absolute flex flex-col justify-center items-center gap-65 text-white font-extrabold w-full bottom-35 right-7">
+          <h1 className="w-60 text-lg">
+            &quot;O Corinthians não é um time e uma torcida. É um estado de
+            espírito.&quot; - Sócrates.
+          </h1>
+          <Link
+            to={"/historia"}
+            className="bg-white text-gray-800 ml-12 transition-all duration-300 hover:bg-gray-800 hover:text-white p-2 rounded font-normal"
+          >
+            Conheça nossa história
+          </Link>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto px-5">
