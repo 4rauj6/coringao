@@ -32,7 +32,7 @@ export function CarouselDefault() {
         slidesPerView="auto"
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         coverflowEffect={{
@@ -70,27 +70,27 @@ export function CarouselDefault() {
 function Homepage() {
   return (
     <section className="homepage">
-      <div className="relative h-200 overflow-hidden">
+      <div className="relative h-screen min-h-150 max-h-full max-w-full overflow-hidden">
         <img
           src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplacar.com.br%2F_next%2Fimage%2F%3Furl%3Dhttps%3A%252F%252Fplacar.com.br%252Fwp-content%252Fuploads%252F2026%252F02%252F7a0e9b7a5effab9ab5827ab29f3b2aa336563bff.jpg%26w%3D3840%26q%3D75&f=1&nofb=1&ipt=f33fdebcabb5c3e207bfef31a43069fb47b524028a5b47d3ab2d4b8b717e7fc0&ipo=images"
           alt="header-img"
           className="header-img absolute inset-0 w-full h-full object-cover object-[40%] z-0"
         />
 
-        <div className="gradiant-body absolute inset-0 z-10 bg-linear-to-t from-black via-black/25 to-transparent"></div>
+        <div className="gradiant-body absolute inset-0 gap-100 z-10 bg-linear-to-t from-black via-black/15 to-transparent"></div>
 
-        <div className="header-title absolute flex flex-col bottom-40 left-5 z-20 w-60 uppercase">
-          <span className="text-gray-200 text-[35px] font-bold">
+        <div className="header-title absolute flex flex-col justify-around gap-80 inset-0 z-20 uppercase text-white box-decoration-clone p-5">
+          <span className=" flex flex-col text-[35px] font-bold max-w-70">
             Super campeão do Brasil 2025
-          </span>
-          <span className="text-gray-200 text-xl w-full mt-2">
-            Com força, foco e FÉ!
+            <span className=" text-lg min-w-full font-normal">
+              Com força, foco e FÉ!
+            </span>
           </span>
 
-          <div className="link mt-4 ml-22">
+          <div className="max-w-full w-full">
             <Link
               to="/"
-              className="bg-gray-100 text-gray-900 px-3 py-2 w-40 flex items-center gap-2 rounded transition-all duration-300 text-md cursor-pointer hover:bg-gray-800 hover:text-gray-100"
+              className="bg-gray-100 text-gray-900 p-3 flex max-w-full w-full text-center self-center gap-2 rounded transition-all duration-300 text-sm cursor-pointer hover:bg-red-500 hover:text-gray-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,24 +112,43 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="relative h-full overflow-hidden mt-100">
+      <div className="relative w-full h-screen min-h-150 max-h-full overflow-hidden mt-20">
         <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.gazetaesportiva.com%2Fuploads%2Fimagem%2F2016%2F12%2F04%2F1982divIMG208995_V1HD001D30_GJQNNNPOVM_4-1024x682.jpg&f=1&nofb=1&ipt=dac63e8e2c410953fa605502b4d7c2b605b70db6c0847996c392d7813559872b&ipo=images"
-          alt=""
-          className="h-180 object-cover object-[75%]"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.areavip.com.br%2Fwp-content%2Fuploads%2F2026%2F06%2Fsocrates-696x406.jpg&f=1&nofb=1&ipt=1031bc89c91194b3b46b93aaf478bf0e039655019dd54c907bb644dcca3a3f93&ipo=images"
+          alt="Sócrates comemorando com a camisa do Corinthians"
+          className="w-full h-full object-cover object-[42%] md:object-center"
         />
-        <div className=" absolute flex flex-col justify-center items-center gap-65 text-white font-extrabold w-full bottom-35 right-7">
-          <h1 className="w-60 text-lg">
-            &quot;O Corinthians não é um time e uma torcida. É um estado de
-            espírito.&quot; - Sócrates.
-          </h1>
+
+        <div className="absolute inset-0 bg-linear-to-b from-black-to-b via-transparent to-black/90" />
+        <div className="absolute inset-0 flex flex-col justify-around gap-80 p-6 text-white">
+          <blockquote className="max-w-60 font-bold text-[30px] drop-shadow-md">
+            &quot;O{" "}
+            <span className="bg-red-600 px-1.5 py-0.5 box-decoration-clone">
+              Corinthians
+            </span>{" "}
+            não é um time e uma torcida. É um{" "}
+            <span className="bg-red-600 px-1.5 py-0.5 box-decoration-clone">
+              estado de espírito.
+            </span>
+            &quot;
+            <footer className="font-normal text-base mt-2 text-gray-200">
+              — Sócrates.
+            </footer>
+          </blockquote>
+
           <Link
-            to={"/historia"}
-            className="bg-white text-gray-800 ml-12 transition-all duration-300 hover:bg-gray-800 hover:text-white p-2 rounded font-normal"
+            to="/historia"
+            className="self-center w-full max-w-full p-3 bg-white text-gray-900 text-center font-medium text-sm rounded shadow-lg transition-all duration-300 hover:bg-red-600 hover:text-white"
           >
             Conheça nossa história
           </Link>
         </div>
+      </div>
+
+      <div className="text-white flex flex-col">
+        <span>Através da historia</span>
+        <span>Os momentos mais importantes da história do Corinthians</span>
+        {/* <SccpTimeline /> */}
       </div>
 
       <div className="max-w-5xl mx-auto px-5">
