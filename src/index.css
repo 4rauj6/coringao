@@ -9,3 +9,12 @@
 body {
   @apply bg-black;
 }
+
+.home-title {
+  text-shadow: 1px 1.5px 0 rgba(0, 0, 0, 1);
+  color: #ffffff;
+}
+
+.home-st {
+  text-shadow: none;
+}
