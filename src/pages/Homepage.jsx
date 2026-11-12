@@ -44,16 +44,16 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="mt-12 w-full px-5 md:mt-5 md:px-8 xl:mt-80 xl:px-7">
+      <div className="mt-12 w-full px-5 md:mt-5 md:px-8 xl:mt-10 lg:p-17 xl:p-20">
         <div className="relative overflow-hidden rounded-xl">
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.areavip.com.br%2Fwp-content%2Fuploads%2F2026%2F06%2Fsocrates-696x406.jpg&f=1&nofb=1&ipt=1031bc89c91194b3b46b93aaf478bf0e039655019dd54c907bb644dcca3a3f93&ipo=images"
             alt="Sócrates comemorando com a camisa do Corinthians"
-            className="h-150 md:h-150 xl:h-190 w-full rounded-xl object-cover object-[45%] md:object-center"
+            className="h-150 md:h-140 lg:h-140 xl:h-167 w-full rounded-xl object-cover object-[45%] md:object-center"
           />
 
           <div className="absolute inset-0 flex flex-col justify-around gap-6 p-6 text-white">
-            <blockquote className="max-w-60 text-[25px] font-bold drop-shadow-md">
+            <blockquote className="max-w-60 text-[25px] xl:max-w-120 xl:text-5xl/15 xl:ml-10 font-bold drop-shadow-md">
               &quot;O{" "}
               <span className="bg-red-600 px-1.5 py-0.5 box-decoration-clone">
                 Corinthians
@@ -78,9 +78,9 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="mt-30 md:mt-40 xl:mt-60 flex flex-col text-white">
-        <h2>SCCP através da história</h2>
-        <div className="mt-4">
+      <div className="mt-30 md:mt-40 xl:mt-40 flex flex-col text-white">
+        <h2 className="self-center text-2xl">SCCP através da história</h2>
+        <div>
           <SccpTimeline />
         </div>
       </div>
