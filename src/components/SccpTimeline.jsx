@@ -51,12 +51,12 @@ function SccpTimeline() {
     <section>
       <div className="flex flex-col justify-center items-center">
         <div
-          className="relative w-full h-full max-h-full p-7 touch-pan-y md:px-8 lg:p-17 xl:p-20"
+          className="relative w-full h-full max-h-full p-7 touch-pan-y md:p-17 lg:p-17 xl:w-326"
           onTouchStart={handleTouchStart}
           onTouchMove={handleMoves}
           onTouchEnd={handleTouchEnd}
         >
-          <span className="absolute flex justify-center items-center top-9 right-8 z-20 w-30 h-10 rounded-md  text-white bg-black/50 xl:text-xl xl:top-120 xl:right-20 lg:bottom-0 lg:top-20 lg:right-20">
+          <span className="absolute flex justify-center items-center top-9 right-8 z-20 w-30 h-10 rounded-md  text-white bg-black/50 xl:text-xl xl:top-115 xl:right-20 lg:bottom-0 lg:top-20 lg:right-20">
             {timeEvents[currentItem].year}
           </span>
           <div className="relative flex justify-center w-full">
@@ -64,7 +64,7 @@ function SccpTimeline() {
               key={timeEvents[currentItem].id}
               src={timeEvents[currentItem].img}
               alt=""
-              className={`w-full h-150 xl:h-167 lg:h-140 xl:object-top object-cover rounded-md cursor-grab md:cursor-default ${timeEvents[currentItem].style}`}
+              className={`w-full h-150 xl:h-160 lg:h-140 xl:object-top object-cover rounded-md cursor-grab md:cursor-default ${timeEvents[currentItem].style}`}
             />
             <div className="absolute flex flex-col left-0 bottom-0 top-80 md:top-110 xl:top-110 lg:top-90 w-full bg-red-600 rounded-b-md ">
               <span className=" text-white text-xl xl:text-2xl p-3">

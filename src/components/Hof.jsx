@@ -34,7 +34,7 @@ export default function Hof() {
 
   return (
     <>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-5 xl:grid-cols-3 xl:gap-10 justify-center items-center p-10">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-5 xl:grid-cols-3 xl:gap-10 justify-center items-center p-10 md:p-19">
         {player.map((index) => (
           <div
             key={index.id}
@@ -43,7 +43,7 @@ export default function Hof() {
             <img
               src={index.img}
               alt=""
-              className="rounded-xl xl:w-90 bg-red-900 p-1 lg:w-95"
+              className="rounded-xl xl:w-89 bg-red-900 p-1 lg:w-95"
             />
             <div className="absolute inset-0 bg-linear-to-t from-red-900 via-red-400/25 to-transparent rounded-md"></div>
             <span className="absolute bottom-8 left-3 z-30 text-white text-xl font-bold px-3 py-1 rounded-md">
