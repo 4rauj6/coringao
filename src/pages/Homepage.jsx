@@ -90,7 +90,7 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center gap-4 overflow-hidden py-16 text-white">
+      <div className="flex w-full flex-col items-center justify-center gap-4 overflow-hidden py-16 bg-gray-300">
         <h2 className="self-center text-4xl text-center font-bebas">
           Hall da fama <br />{" "}
           <span className="text-red-700 text-5xl">DO SCCP</span>
