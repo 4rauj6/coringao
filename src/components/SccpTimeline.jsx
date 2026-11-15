@@ -51,26 +51,26 @@ function SccpTimeline() {
     <section>
       <div className="flex flex-col justify-center items-center">
         <div
-          className="relative w-full h-full max-h-full p-7 touch-pan-y md:p-17 lg:p-17 xl:w-326"
+          className=" timeline relative w-full h-full max-h-full p-7 touch-pan-y md:p-12 lg:p-17 xl:w-326"
           onTouchStart={handleTouchStart}
           onTouchMove={handleMoves}
           onTouchEnd={handleTouchEnd}
         >
-          <span className="absolute flex justify-center items-center top-9 right-8 z-20 w-30 h-10 rounded-md  text-white bg-black/50 xl:text-xl xl:top-115 xl:right-20 lg:bottom-0 lg:top-20 lg:right-20">
+          <span className="timeline-year absolute flex justify-center items-center top-9 right-8 z-20 w-30 h-10 rounded-md  text-white font-bebas bg-black/50 xl:text-xl xl:top-115 xl:right-20 lg:bottom-0 lg:top-20 lg:right-20 md:top-15 md:right-15">
             {timeEvents[currentItem].year}
           </span>
-          <div className="relative flex justify-center w-full">
+          <div className=" relative flex justify-center w-full">
             <img
               key={timeEvents[currentItem].id}
               src={timeEvents[currentItem].img}
               alt=""
-              className={`w-full h-150 xl:h-160 lg:h-140 xl:object-top object-cover rounded-md cursor-grab md:cursor-default ${timeEvents[currentItem].style}`}
+              className={`timeline-card w-full h-150 xl:h-155 lg:h-140 xl:object-top object-cover rounded-md cursor-grab md:cursor-default ${timeEvents[currentItem].style}`}
             />
-            <div className="absolute flex flex-col left-0 bottom-0 top-80 md:top-110 xl:top-110 lg:top-90 w-full bg-red-600 rounded-b-md ">
-              <span className=" text-white text-xl xl:text-2xl p-3">
+            <div className="tc-content absolute flex flex-col left-0 bottom-0 top-85 md:top-110 xl:top-110 lg:top-90 w-full bg-red-600 rounded-b-md ">
+              <span className=" text-white text-xl xl:text-2xl p-3 font-bold font-bebas">
                 {timeEvents[currentItem].title}
               </span>
-              <span className="text-[13px] xl:text-[17px] p-3">
+              <span className="text-[13px] xl:text-[17px] p-3 font-barlow">
                 {timeEvents[currentItem].content}
               </span>
             </div>
@@ -78,18 +78,40 @@ function SccpTimeline() {
 
           <button
             type="button"
-            className="absolute left-8 xl:left-20 lg:left-20 md:left-10 top-85 xl:top-85 -translate-y-1/2 bg-black/70  transition-all duration-300 hover:bg-red-600 text-white px-3 py-2 rounded-full cursor-pointer z-20"
+            className="control-button prev absolute left-8 top-75 xl:left-20 lg:left-20 md:left-15 md:top-90  xl:top-85 -translate-y-1/2 bg-black/70  transition-all duration-300 hover:bg-red-600 text-white px-3 py-2 rounded-full cursor-pointer z-20"
             onClick={prevItem}
           >
-            prev
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
+                clipRule="evenodd"
+              />
+            </svg>
           </button>
 
           <button
             type="button"
-            className="absolute right-8 xl:right-20 lg:right-20  md:right-10 top-85 xl:top-85 -translate-y-1/2 bg-black/70 transition-all duration-300 hover:bg-red-600 text-white px-3 py-2 rounded-full cursor-pointer z-20"
+            className="control-button next absolute right-8 top-75 xl:right-20 lg:right-20  md:right-15 md:top-90  xl:top-85 -translate-y-1/2 bg-black/70 transition-all duration-300 hover:bg-red-600 text-white px-3 py-2 rounded-full cursor-pointer z-20"
             onClick={nextItem}
           >
-            next
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="size-6"
+            >
+              <path
+                fillRule="evenodd"
+                d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                clipRule="evenodd"
+              />
+            </svg>
           </button>
         </div>
       </div>

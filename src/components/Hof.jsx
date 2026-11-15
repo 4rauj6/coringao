@@ -9,7 +9,7 @@ export default function Hof() {
     {
       id: 2,
       img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fconteudo.imguol.com.br%2Fc%2Fesporte%2Fe5%2F2021%2F09%2F29%2Fneto-em-acao-com-a-camisa-do-corinthians-1632925017815_v2_450x450.jpg&f=1&nofb=1&ipt=0ef5568e7a382b40a55d2133081356372b9d66d59d73b2b666b81eca419945d1&ipo=images",
-      title: "🇧🇷 | Sócrates",
+      title: "🇧🇷 | Rivelino",
       content: "Eterna lenda",
     },
     {
@@ -46,15 +46,14 @@ export default function Hof() {
               className="rounded-xl xl:w-89 bg-red-900 p-1 lg:w-95"
             />
             <div className="absolute inset-0 bg-linear-to-t from-red-900 via-red-400/25 to-transparent rounded-md"></div>
-            <span className="absolute bottom-8 left-3 z-30 text-white text-xl font-bold px-3 py-1 rounded-md">
+            <span className="absolute bottom-8 left-3 z-30 text-white text-xl font-bold font-bebas px-3 py-1 rounded-md">
               {index.title}
             </span>
-            <span className="absolute bottom-2  left-3 z-30 text-white text-base font-normal px-3 py-1 rounded-md">
+            <span className="absolute bottom-2  left-3 z-30 text-white text-base font-normal font-barlow px-3 py-1 rounded-md">
               {index.content}
             </span>
           </div>
         ))}
-        ;
       </div>
     </>
   );
