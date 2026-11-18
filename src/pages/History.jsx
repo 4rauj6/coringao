@@ -4,9 +4,9 @@ function History() {
   const scrollToDiv = useRef(null);
 
   const scrollTrigger = () => {
-    window.scrollTo({
-      top: scrollToDiv.current.offsetTop,
+    scrollToDiv.current.scrollIntoView({
       behavior: "smooth",
+      block: "center",
     });
   };
 
