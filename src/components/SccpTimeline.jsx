@@ -47,6 +47,8 @@ function SccpTimeline() {
     handleTouchEnd,
   } = useCarousel(timeEvents.length);
 
+  const itemsLength = timeEvents.length;
+
   return (
     <section>
       <div className="flex flex-col justify-center items-center">
@@ -58,6 +60,9 @@ function SccpTimeline() {
         >
           <span className="timeline-year absolute flex justify-center items-center top-9 right-8 z-20 w-30 h-10 rounded-md  text-white font-bebas bg-black/50 xl:text-xl xl:top-115 xl:right-20 lg:bottom-0 lg:top-20 lg:right-20 md:top-15 md:right-15">
             {timeEvents[currentItem].year}
+          </span>
+          <span className="absolute flex justify-center items-center top-9 left-10 z-20 w-30 h-10 rounded-md  text-white font-bebas bg-black/50 xl:text-xl xl:top-115 xl:left-20 lg:bottom-0 lg:top-20 lg:right-20 md:top-15 md:left-15">
+            {currentItem + 1} / {itemsLength}
           </span>
           <div className=" relative flex justify-center w-full">
             <img

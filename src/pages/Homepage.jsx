@@ -55,7 +55,7 @@ function Homepage() {
           <div className="card-components absolute inset-0 flex flex-col justify-between md:justify-around xl:justify-between gap-10 p-6 sm:p-8 md:p-10 text-white font-bebas">
             <blockquote className="max-w-60 text-[25px] md:max-w-70 xl:max-w-120 md:text-4xl/12 xl:text-5xl/15 xl:ml-10 font-bold drop-shadow-md">
               <div className="card-text">
-                &quot;{" "}
+                &quot;
                 <span className="bg-red-600 px-1.5 py-0.5 box-decoration-clone">
                   O Corinthians
                 </span>{" "}
@@ -71,7 +71,7 @@ function Homepage() {
             </blockquote>
 
             <Link
-              to="/historia"
+              to="/historia-sccp"
               className="w-full max-w-50 self-center rounded bg-white p-3 text-center text-xl font-medium text-gray-900 shadow-lg transition-all duration-300 hover:bg-red-600 hover:text-white"
             >
               Conheça nossa história
