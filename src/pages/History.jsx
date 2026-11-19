@@ -6,7 +6,7 @@ function History() {
   const scrollTrigger = () => {
     scrollToDiv.current.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
   };
 
@@ -38,8 +38,8 @@ function History() {
           <div className="absolute inset-0 z-10 bg-linear-to-t from-gray-300 via-gray-500/50 via-40% to-transparent pointer-events-none"></div>
         </div>
 
-        <div className="bg-gray-300 mt-100" ref={scrollToDiv}>
-          <span>smaidjhsaidh</span>
+        <div className="bg-gray-300 mt-100">
+          <span ref={scrollToDiv}> smaidjhsaidh</span>
         </div>
       </section>
     </>
