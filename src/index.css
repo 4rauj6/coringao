@@ -55,7 +55,7 @@ body {
   }
 
   .timeline-card {
-    @apply h-180;
+    @apply h-170;
   }
 
   .timeline-year {

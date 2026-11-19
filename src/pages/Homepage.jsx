@@ -44,7 +44,7 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="sccp-history w-full px-5 py-16 sm:px-8 sm:py-20 md:px-12 lg:px-17 lg:py-24">
+      <div className="sccp-history w-full px-5 py-16 sm:px-8 sm:py-20 md:px-12 lg:px-17 xl:py-36">
         <div className="relative mx-auto w-full max-w-292 overflow-hidden">
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.areavip.com.br%2Fwp-content%2Fuploads%2F2026%2F06%2Fsocrates-696x406.jpg&f=1&nofb=1&ipt=1031bc89c91194b3b46b93aaf478bf0e039655019dd54c907bb644dcca3a3f93&ipo=images"
@@ -80,7 +80,7 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center gap-8 py-12 xl:py-20 text-white">
+      <div className="flex w-full flex-col items-center gap-8 py-12 xl:py-10 mb-30 text-white">
         <h2 className="self-center text-4xl text-center font-bebas">
           SCCP <br />{" "}
           <span className="text-red-700 text-4xl">através da história</span>
@@ -90,10 +90,9 @@ function Homepage() {
         </div>
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center gap-4 overflow-hidden py-16 bg-gray-300">
+      <div className="flex w-full flex-col items-center justify-center gap-4 overflow-hidden py-16 bg-gray-200">
         <h2 className="self-center text-4xl text-center font-bebas">
-          Hall da fama <br />{" "}
-          <span className="text-red-700 text-5xl">DO SCCP</span>
+          Hall da fama <span className="text-red-700">SCCP</span>
         </h2>
         <Hof />
       </div>

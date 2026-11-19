@@ -43,12 +43,12 @@ export default function Hof() {
             <img
               src={index.img}
               alt="hof-players"
-              className="rounded-xl xl:w-89 bg-gray-600 p-1 lg:w-95"
+              className="rounded-xl xl:w-89 bg-gray-700 p-1 lg:w-95"
             />
-            <span className="absolute bottom-8 left-3 z-30 text-gray-600/80 text-xl font-bold font-bebas px-3 py-1 rounded-md">
+            <span className="absolute bottom-8 left-3 z-30 text-gray-700 text-xl font-bold font-bebas px-3 py-1 rounded-md">
               {index.title}
             </span>
-            <span className="absolute bottom-2  left-3 z-30 text-gray-600/80 text-base font-normal font-barlow px-3 py-1 rounded-md">
+            <span className="absolute bottom-2  left-3 z-30 text-gray-700 text-base font-normal font-barlow px-3 py-1 rounded-md">
               {index.content}
             </span>
             <div className="absolute inset-0 bg-linear-to-t from-gray-100 via-gray-400/40 to-transparent rounded-md"></div>
