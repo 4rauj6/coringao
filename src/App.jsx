@@ -1,30 +1,31 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import History from "./pages/History";
-import { useEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
+
+function PageReset() {
+  const scrollReset = useLocation();
+  const resetTrigger = useRef(null);
+
+  useLayoutEffect(() => {
+    resetTrigger.current?.scrollIntoView({ block: "start", behavior: "auto" });
+  }, [scrollReset.pathname]);
+
+  return <div ref={resetTrigger}></div>;
+}
 
 function App() {
   const basename = import.meta.env.DEV ? "" : "/coringao";
 
   return (
     <BrowserRouter basename={basename}>
-      <ScrollHandler />
+      <PageReset />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/historia-sccp" element={<History />} />
       </Routes>
     </BrowserRouter>
   );
-}
-
-function ScrollHandler() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
 }
 
 export default App;
