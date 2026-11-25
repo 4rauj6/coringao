@@ -96,6 +96,49 @@ function Homepage() {
         </h2>
         <Hof />
       </div>
+
+      <div className="flex w-full flex-col items-center justify-center gap-4 overflow-hidden mt-10 p-6">
+        <h2 className="text-white font-bebas text-[2em] min-w-full text-center">
+          Mural das consquistas
+        </h2>
+        <div className="flex flex-col text-white gap-5 lg:grid lg:grid-cols-2 lg:p-7 xl:grid-cols-3">
+          <div className="flex flex-col justify-center items-center gap-3">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F29%2Fd8%2F5b%2F29d85b51359f170b9419d2aff3987e3e.png&f=1&nofb=1&ipt=b58da18bed2feeb24b8a740a15b5595374f3b45fb1cf26ccd9d1d4bbd497aedb&ipo=images"
+              alt="taça paulistão"
+              className="w-70 object-cover md:w-100 lg:w-lg"
+            />
+            <span className="text-3xl font-bebas">31x campeão paulista</span>
+            <span className="text-[12px]">
+              1914, 1916, 1922-1924, 1928-1930, 1937-1939, 1941, 1951, 1952,
+              1954, 1977, 1979, 1982, 1983, 1988, 1995, 1999, 2001, 2003, 2009,
+              2013, 2017-2019, 2025.
+            </span>
+          </div>
+
+          <div className="flex flex-col justify-center items-center gap-3">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftmssl.akamaized.net%2Fimages%2Ferfolge%2Fverybigquad%2F262.png%3Flm%3D1466586549&f=1&nofb=1&ipt=da401938c7c644df7f07af87f46f009507eed788b3398d20fdb79f112cc06ae5&ipo=images"
+              alt="taça brasileirão"
+              className="w-40 object-cover md:w-60 lg:w-70"
+            />
+            <span className="text-3xl font-bebas">7x campeão brasileiro</span>
+            <span className="text-[12px]">
+              1990, 1998, 1999,2005, 2011, 2015, 2017.
+            </span>
+          </div>
+
+          <div className="flex flex-col justify-center items-center gap-3">
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F54%2Fae%2Fd0%2F54aed0af77fc735e94ce8e6176ec0625.png&f=1&nofb=1&ipt=7224b7ed9be062199b61b628414969fcfb283b01dca6422f6c58e88985573420&ipo=images"
+              alt="taça libertadores"
+              className="w-35 object-cover lg:w-40"
+            />
+            <span className="text-3xl font-bebas">1x campeão da america</span>
+            <span className="text-[12px]">2012</span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
